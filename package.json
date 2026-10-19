@@ -1,0 +1,26 @@
+{
+  "name": "claimcheck",
+  "version": "1.0.0",
+  "description": "ClaimCheck — Real-Time Fact-Checking Web Application (MERN Stack)",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"blue,teal\" \"npm:server\" \"npm:client\"",
+    "install:server": "npm --prefix server install",
+    "install:client": "npm --prefix client install",
+    "install:all": "npm run install:server && npm run install:client",
+    "server": "npm --prefix server run dev",
+    "client": "npm --prefix client run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "keywords": [
+    "fact-checking",
+    "mern",
+    "gemini",
+    "serpapi",
+    "mongodb"
+  ],
+  "author": "",
+  "license": "ISC"
+}
